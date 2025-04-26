@@ -1,0 +1,3 @@
+This project implements a wire routing algorithm using a Breadth-First Search (BFS) approach to connect endpoint pairs on a grid-based board while avoiding obstacles and existing wires. The algorithm simulates wire placement to avoid conflicts and retries wire routing in different orders if necessary.
+Each wire is routed independently using BFS to find the shortest available path. If a wire cannot be placed due to conflicts, the algorithm reorders the goals and retries, keeping track of the best configuration. Once the best set of "route-able" wires is found, they are committed to the board.
+The algorithm runs in O(n²) per path (where n is board size)
